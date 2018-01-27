@@ -15,7 +15,7 @@ Then deploy Web App:
 ```
 $rgName = "dotnetTest"
 $webappName = "example" + $(Get-Random).ToString()
-$location = "eastus"
+$location = "<LOCATION>"
 
 $rg = New-AzureRmResourceGroup -Name $rgName -Location $location
 $asp = New-AzureRmAppServicePlan -Name $webAppName -ResourceGroupName $rgName -Location $location -Tier Standard
